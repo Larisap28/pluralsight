@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Larisap28/pluralsight/issues"
   },
-  "homepage": "https://github.com/Larisap28/pluralsight#readme"
+  "homepage": "https://github.com/Larisap28/pluralsight#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.5",
+    "jquery": "^2.1.4"
+  }
 }
