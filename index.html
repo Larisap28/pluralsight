@@ -140,7 +140,7 @@
 
 
 
-        <section class="laptop-bg hero" showNewDesign">
+        <section class="laptop-bg hero" showNewDesign>
             <div class="row">
                 <div class="large-1 column">&nbsp;</div>
                 <div class="large-10 small-12 columns">
@@ -161,7 +161,7 @@
         </section>
 
 
-        <section class="slate-bg strip" !showNewDesign">
+        <section class="slate-bg strip" !showNewDesign>
             <div class="row">
                 <div class="large-4 columns">
                     <h4 class="orange individual">
@@ -203,7 +203,7 @@
                 </div>
                 <div class="large-9 columns">
                     <div class="row">
-                        <div class="large-4 small-6 columns">
+                        <div class="large-4 small-6 columns bad">
                             <a href="tag/spotlight">
                                 <div class="cellpanel spotlight">
                                     <div class="short cell"><h3>Spotlighted courses</h3></div>
@@ -226,7 +226,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="large-4 small-6 columns">
+                        <div class="large-4 small-6 columns bad">
                             <a href="/authors" id="ui-authors">
                                 <div class="cellpanel author-spotlight">
                                     <div class="short cell"><h3>Our authors</h3></div>
@@ -551,7 +551,7 @@
     </div>
 
 
-    <footer class="footer-site ng-scope" ng-controller="FooterController">
+    <footer class="footer-site" >
         <div class="row">
             <!-- MAIN FOOTER STUFF -->
             <div class="large-4 columns">
@@ -565,7 +565,7 @@
                         <i class="social fi-social-facebook"></i>
                     </span>
                     Facebook
-                    <span ng-class="{'number': social.likes != undefined}" class="ng-binding number">656,167</span>
+                    <!--<span ng-class="{'number': social.likes != undefined}" class="ng-binding number">656,167</span>-->
                 </a>
                 <!-- twitter -->
                 <a class="twitter social button" href="http://twitter.com/pluralsight" target="_blank" rel="nofollow">
@@ -573,7 +573,7 @@
                         <i class="social fi-social-twitter"></i>
                     </span>
                     Twitter
-                    <span ng-class="{'number': social.followers != undefined}" class="ng-binding number">206,191</span>
+                    <!--<span ng-class="{'number': social.followers != undefined}" class="ng-binding number">206,191</span>-->
                 </a>
                 <!-- google+ -->
                 <a class="google social button" href="http://plus.google.com/+pluralsight" target="_blank" rel="nofollow">
@@ -581,7 +581,7 @@
                         <i class="social fi-social-google-plus"></i>
                     </span>
                     Google+
-                    <span ng-class="{'number': social.plusOnes != undefined}" class="ng-binding number">12,366</span>
+                    <!--<span ng-class="{'number': social.plusOnes != undefined}" class="ng-binding number">12,366</span>-->
                 </a>
                 <!-- newsletter -->
                 <p>Subscribe to our newsletter for weekly updates.</p>
@@ -599,16 +599,16 @@
                                 <input type="text" placeholder="Email" name="newsletterEmail" required="" ng-pattern="/^[a-zA-Z0-9'._%+-]+@[a-zA-Z0-9-][a-zA-Z0-9.-]*\.[a-zA-Z]{2,63}$/" validation="" ng-model="newsletterEmail" ng-focus="newsletterEmailFocus()" class="ng-pristine ng-invalid ng-invalid-required ng-valid-pattern"><small ng-show="newsletterSignupForm['newsletterEmail'].$error.pattern &amp;&amp; newsletterSignupForm['newsletterEmail'].$dirty" class="ng-scope ng-hide"></small><small ng-show="newsletterSignupForm['newsletterEmail'].$error.required &amp;&amp; newsletterSignupForm['newsletterEmail'].$dirty" class="ng-scope ng-hide"> </small>
                             </label>
                         </div>
-                        <div class="small-4 columns">
+                        <div class="small-4 columns annoying-button">
                             <button class="orange button postfix" ng-click="submitNewsletterSignUp(newsletterEmail)" ng-disabled="newsletterSignupForm.$invalid" disabled="disabled">Submit</button>
                         </div>
                     </form>
                 </div>
             </div>
             <!-- SITE MAP -->
-            <div class="large-7 large-offset-1 columns">
+            <div class="large-7 large-offset-1 columns right-footer">
                 <div class="row">
-                    <div class="large-4 columns">
+                    <div class="large-4 columns tricky">
                         <h5>Learn</h5>
                         <ul class="side-nav">
                             <li><a href="//www.pluralsight.com/tags">Browse Courses</a></li>
@@ -623,7 +623,7 @@
                             <li><a href="//www.pluralsight.com/government">Government</a></li>
                         </ul>
                     </div>
-                    <div class="large-4 columns">
+                    <div class="large-4 columns tricky">
                         <h5>Community</h5>
                         <ul class="side-nav">
                             <li><a href="//www.pluralsight.com/kids">Free Kids Courses</a></li>
@@ -641,7 +641,7 @@
                             <li><a href="//www.pluralsight.com/privacypolicy" rel="nofollow">Privacy Policy</a></li>
                         </ul>
                     </div>
-                    <div class="large-4 columns">
+                    <div class="large-4 columns naspa">
                         <h5>Features</h5>
                         <ul class="side-nav">
                             <li><a href="//www.pluralsight.com/training/products/mobileplayers">Mobile Apps</a></li>
